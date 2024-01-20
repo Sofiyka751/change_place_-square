@@ -1,0 +1,50 @@
+.block {
+    position: relative;
+    animation: place 8s linear infinite;
+}
+
+.box{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    animation: gradient 8s linear infinite;
+}
+
+@keyframes gradient {
+    0%{
+        background: red;
+    }
+    25%{
+        background: blue;
+    }
+    50%{
+        background: green;
+    }
+    75%{
+        background: yellow;
+    }
+}
+
+@keyframes place {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        top: 100px;
+        left: 0;
+    }
+    50%{
+        top: 100px;
+        left: 100px;
+    }
+    75%{
+        top: 0;
+        left: 100px;
+    }
+    100%{
+        top: 0;
+        left: 0;
+    }
+
+}
